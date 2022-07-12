@@ -1,0 +1,81 @@
+.sky-drag-box {
+  background: burlywood;
+  position: relative;
+  transform-origin: 50% 50% 0;
+  cursor: move;
+  overflow: hidden;
+  user-select: none;
+}
+
+
+.sky-drag-box .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  background: yellowgreen;
+}
+
+.sky-drag-box .left:hover, .sky-drag-box .right:hover {
+  cursor: ew-resize;
+}
+
+.sky-drag-box .top:hover, .sky-drag-box .bottom:hover {
+  cursor: ns-resize;
+}
+
+.sky-drag-box .left_top:hover, .sky-drag-box .right_bottom:hover {
+  cursor: nwse-resize;
+}
+
+.sky-drag-box .left_bottom:hover, .sky-drag-box .right_top:hover {
+  cursor: ne-resize;
+}
+
+.sky-drag-box .left {
+  left: -5px;
+  height: 100%;
+  top: 0;
+}
+
+.sky-drag-box .top {
+  top: -5px;
+  left: 0;
+  width: 100%;
+}
+
+.sky-drag-box .right {
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+
+.sky-drag-box .bottom {
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+}
+
+.sky-drag-box .left_top, .sky-drag-box .left_bottom, .sky-drag-box .right_top, .sky-drag-box .right_bottom {
+  z-index: 1;
+}
+
+.sky-drag-box .left_top {
+  left: -5px;
+  top: -5px;
+}
+
+.sky-drag-box .left_bottom {
+  left: -5px;
+  bottom: -5px;
+}
+
+.sky-drag-box .right_top {
+  right: -5px;
+  top: -5px;
+}
+
+.sky-drag-box .right_bottom {
+  right: -5px;
+  bottom: -5px;
+}
