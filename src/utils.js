@@ -49,3 +49,7 @@ function throttle(fn, interval, options = { leading: true, trailing: false }) {
 
   return _throttle
 }
+
+module.exports = {
+  throttle
+}

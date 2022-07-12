@@ -1,4 +1,4 @@
-// const { throttle } = require("./utils.js")
+const { throttle } = require("./utils.js")
 
 function enhance(box) {
   let tempBox = box
@@ -6,7 +6,7 @@ function enhance(box) {
   let height = window.innerHeight
   tempBox.style.width = width + "px"
   tempBox.style.height = height + "px"
-  
+
   function resize() {
     width = window.innerWidth
     height = window.innerHeight
@@ -37,4 +37,4 @@ function enhance(box) {
 }
 
 
-// module.exports = enhance
+module.exports = enhance
